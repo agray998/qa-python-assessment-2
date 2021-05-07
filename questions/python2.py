@@ -115,7 +115,11 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    solution = ""
+    for i in range(len(string1)):
+        solution += f"{string1[i]}{string2[i]}"
+    return solution
+        
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
