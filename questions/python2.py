@@ -188,7 +188,12 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+    _list = [a, b, c]
+    _list.sort()
+    if _list[1] - _list[0] == _list[2] - _list[1]:
+        return True
+    else:
+        return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
