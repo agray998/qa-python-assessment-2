@@ -235,7 +235,14 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    if len(string1) == len(string2):
+        for char in string1:
+            if char not in string2:
+                return False
+    for char in min([string1, string2], key=len):
+        if char not in max([string1, string2], key=len):
+            return False
+    return True
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
