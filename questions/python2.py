@@ -263,6 +263,12 @@ def nine(string1, string2):
 
 
 def ten(x, y):
-    return []
+    ylist = []
+    for i in range(y):
+        xlist = []
+        for j in range(x):
+            xlist.append(i*j)
+        ylist.append(xlist)
+    return ylist
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
